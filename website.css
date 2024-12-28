@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Styles the navigation bar */
+
+.navigation{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+}
+
+header{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    background-color: #213555;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.navbar a{
+    padding: 30px;
+    text-decoration: none;
+    color: #F5EFE7;
+    border-radius: 30px;
+}
+
+.navbar a:hover{
+    background-color: black;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+/* ends the styling for navigation */
+
+
+/* Styling for the hero section */
+
+button{
+    padding: 9px 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #F5EFE7;
+}
+
+button:hover{
+    transition-duration: 1s;
+    border-width: 5px;
+    background-color:#213555;
+}
+
+.hero{
+    background-color: #D8C4B6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    min-height: fit-content;
+    height: 80vh;
+}
+
+
+img{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.text{
+    flex: 1;
+    max-width: 500px;
+}
+
+.text p, .text h1, .text h2, .text a {
+    padding: 15px;
+}
+
+.text p{
+    line-height: 30px;
+}
+
+
+/* styling for web design section */
+
+.webdesign{
+    background-color: #213555;
+    color: #F5EFE7;
+    height: fit-content;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: fit-content;
+}
+
+
+.project{
+    background-color: #F5EFE7;
+    color: black;
+    display: flex;
+    text-align: left;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: fit-content;
+    margin: 10px;
+    align-items: center;
+}
+
+.project img, .project h1, .project p, .project button{
+    padding: 15px
+}
+
+
+/* styling for programming section */
+.coding{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.coding-projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+}
+
+.coding-projects .project{
+    display: grid;
+    place-items: center;
+    max-width: 500px;
+    height: fit-content;
+    background-color: #213555;
+    margin: 30px;
+    border-radius: 15px;
+    color: #F5EFE7;
+    padding-bottom: 30px;
+}
+
+.techs {
+    padding: 15px;
+}
+
+.techs button{
+    background-color: #D8C4B6;
+    color: #213555;
+}
+
+
+/* Styling for the resume page */
+
+.resume{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}   
+
+.resume h1{
+    padding-bottom: 15px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.experience, .education{
+    padding-bottom: 30px;
+}
+
+.experience h2, .education h2{
+    padding-bottom: 5px;
+}
+
+.experience p {
+    padding-bottom: 5px;
+    font-style: italic;
+    color: gray;
+}
+
+.experience li{
+    line-height: 20px;
+    padding-bottom: 8px;
+}
+
+.experience ul{
+    padding-left: 30px;
+}
+
+/* Styling for the contact page */
+
+.container {
+    display: inline-flex
+}
+
+.contact{
+    text-align: center;
+    background-color: #213555;
+    color: #D8C4B6;
+    padding: 30px;
+}
+
+.contact div{
+    padding: 20px 50px;
+    line-height: 50px;
+}
+
+ /* Syling for the footer*/
+
+.footer{
+    text-align: center;
+    background-color: #D8C4B6;
+    padding: 30px;
+}
+
+.footer li{
+    list-style: none;
+    display: inline-flex;
+    padding: 30px;
+    margin: 10;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#213555
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* styling to make the transitions work */ 
+.right-transition{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(100%);
+}
+
+.left-transition{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
